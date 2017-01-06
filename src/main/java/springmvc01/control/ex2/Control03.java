@@ -1,4 +1,5 @@
-/* 주제:  ##
+/* 주제: GET과 POST 요청 구분하기
+ * => @RequestMapping 속성을 이용하여 설정한다.
  * */
 package springmvc01.control.ex2;
 
