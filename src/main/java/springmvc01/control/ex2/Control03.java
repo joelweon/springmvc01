@@ -1,0 +1,25 @@
+/* 주제:  ##
+ * */
+package springmvc01.control.ex2;
+
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
+
+@Controller
+public class Control03 {
+  /*ex2/control03.jsp로 테스트 하라!*/
+  
+  @RequestMapping(value="/ex2/get", method=RequestMethod.GET)
+  public void get() {
+  }
+  
+  @RequestMapping(value="/ex2/post", method=RequestMethod.POST)
+  public void post() { // 같은경로에 jsp 파일이 있으면 리턴안해도 된다. 알아서 찾는다.
+  }
+  
+  // method 속성을 지정하지 않으면 get과 post 요청 모두 처리한다.
+  @RequestMapping(value="/ex2/all")
+  public void all() { 
+  }
+}
