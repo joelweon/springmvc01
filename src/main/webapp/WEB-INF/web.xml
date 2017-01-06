@@ -15,7 +15,20 @@
 <!-- 필터를 어느 요청에 적용할 것인 지 설정한다. -->
 
 <!-- 서블릿 클래스 등록 -->
-   
+  <servlet>
+        <servlet-name>dispatcher</servlet-name>
+        <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+        <init-param>
+            <param-name>contextConfigLocation</param-name>
+            <param-value>classpath:springmvc01/control/ex2/dispatcher-servlet.xml</param-value>
+        </init-param>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>dispatcher</servlet-name>
+        <url-pattern>*.do</url-pattern>
+    </servlet-mapping>
+    
 </web-app>
 
 
